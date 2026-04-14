@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoodNews Experience</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Andreea Ilie</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Andreea Ilie</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="index.html#skills" onclick="toggleMenu()">Skills</a></li>
+          <li>
+            <a href="index.html#experience" onclick="toggleMenu()"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section class="project-page">
+      <p class="section__text__p1">My time at</p>
+      <h1 class="title">GoodNews</h1>
+      <div class="carousel" data-autoplay="false" data-interval="4000">
+        <div class="carousel-track">
+          <img
+            src="assets/gn-pic.png"
+            alt="Good News project image"
+            class="carousel-slide"
+          />
+        </div>
+
+        <button
+          class="carousel-btn prev"
+          type="button"
+          aria-label="Previous image"
+        >
+          ❮
+        </button>
+        <button class="carousel-btn next" type="button" aria-label="Next image">
+          ❯
+        </button>
+      </div>
+      <div class="experience-description">
+        <h2>My Experience</h2>
+
+        <p>
+          I started at GoodNews as a barista and quickly grew into a management
+          role, where I got to work on both the people and the operations side
+          of the store.
+        </p>
+        <p>
+          What I enjoyed most was building a team, training new staff, and
+          finding ways to improve how things worked day to day. From handling
+          busy shifts to solving small (and sometimes unexpected) problems, it
+          taught me how much impact good structure and clear communication can
+          have.
+        </p>
+        <p>
+          I also took part in interviewing new team members and thinking
+          carefully about who would fit not just the role, but the team itself.
+          Over time, I became more focused on creating an environment where
+          people actually wanted to come to work — where expectations were
+          clear, communication was open, and people felt supported. This had a
+          noticeable impact on attendance and overall team energy, and showed me
+          how much the right environment can influence performance.
+        </p>
+      </div>
+      <div class="button-row">
+        <a
+          href="assets/recommendation-letter.pdf"
+          class="download-btn"
+          download
+        >
+          Download Recommendation Letter
+        </a>
+
+        <a href="index.html#experience" class="back-btn">
+          ← Back to Experience
+        </a>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Here you can</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:contact@andreeailie.nl">contact@andreeailie.nl</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/andreea-ilie-nl/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Andreea Ilie. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

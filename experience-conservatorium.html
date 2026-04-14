@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conservatorium van Amsterdam Experience</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Andreea Ilie</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Andreea Ilie</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="index.html#skills" onclick="toggleMenu()">Skills</a></li>
+          <li>
+            <a href="index.html#experience" onclick="toggleMenu()"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section class="project-page">
+      <p class="section__text__p1">My time at</p>
+      <h1 class="title">Conservatorium van Amsterdam</h1>
+      <div class="carousel" data-autoplay="true" data-interval="4000">
+        <div class="carousel-track">
+          <img
+            src="assets/cva-1.png"
+            alt="Conservatorium project image 1"
+            class="carousel-slide"
+          />
+          <img
+            src="assets/cva-2.png"
+            alt="Conservatorium project image 2"
+            class="carousel-slide"
+          />
+          <img
+            src="assets/cva-3.png"
+            alt="Conservatorium project image 3"
+            class="carousel-slide"
+          />
+        </div>
+
+        <button
+          class="carousel-btn prev"
+          type="button"
+          aria-label="Previous image"
+        >
+          ❮
+        </button>
+        <button class="carousel-btn next" type="button" aria-label="Next image">
+          ❯
+        </button>
+      </div>
+      <div class="experience-description">
+        <h2>My Experience</h2>
+
+        <p>
+          At the Conservatorium van Amsterdam, I worked as a university
+          assistant in the theory department, supporting students in
+          understanding complex musical concepts. What I enjoyed most wasn’t
+          just the content itself, but the process of teaching and explaining —
+          finding the right way to make something “click” for each person.
+        </p>
+        <p>
+          Most of my work focused on harmony and analysis of classical music,
+          from Baroque to Modernism in the interbelic period. When needed, I
+          also brought in elements of music history and general theory to give
+          more context, especially when it helped connect abstract ideas to
+          something more tangible.
+        </p>
+        <p>
+          I really liked working one-on-one with students or in small groups,
+          guiding them through difficult material, and seeing their confidence
+          grow over time. That experience made me realize how much I enjoy
+          coaching and helping people develop, especially when it comes to
+          breaking down complex ideas into something clear and manageable.
+        </p>
+      </div>
+      <div class="button-row">
+        <a
+          href="assets/recommendation-letter.pdf"
+          class="download-btn"
+          download
+        >
+          Download Recommendation Letter
+        </a>
+
+        <a href="index.html#experience" class="back-btn">
+          ← Back to Experience
+        </a>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Here you can</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:contact@andreeailie.nl">contact@andreeailie.nl</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/andreea-ilie-nl/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Andreea Ilie. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
