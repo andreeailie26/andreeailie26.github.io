@@ -386,13 +386,16 @@ article .icon {
 }
 
 .role-card {
-  display: flex;
+  display: grid;
   width: auto;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: space-between;
+  grid-template-columns: minmax(120px, 150px) minmax(0, 1fr);
   gap: 1rem;
+  align-items: start;
   text-align: left;
+}
+
+.role-card > :not(.role-date):not(.role-logo-wrap) {
+  grid-column: 2;
 }
 
 .role-card h2 {
@@ -412,19 +415,23 @@ article .icon {
 
 .role-logo-wrap {
   align-items: center;
+  align-self: start;
+  aspect-ratio: 1 / 1;
   background: rgb(250, 250, 250);
   border: rgb(220, 220, 220) 0.1rem solid;
   border-radius: 1.25rem;
   display: flex;
+  grid-column: 1;
+  grid-row: 2 / span 5;
   justify-content: center;
   margin-bottom: 0.25rem;
-  min-height: 140px;
   padding: 1.25rem;
+  width: 100%;
 }
 
 .role-logo {
-  max-height: 92px;
-  max-width: 190px;
+  max-height: 78%;
+  max-width: 78%;
   object-fit: contain;
 }
 
@@ -439,6 +446,7 @@ article .icon {
   color: black;
   font-size: 0.9rem;
   font-weight: 600;
+  grid-column: 1 / -1;
 }
 
 .tag-list {
