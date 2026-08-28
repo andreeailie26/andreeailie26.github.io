@@ -49,11 +49,19 @@
   .experience-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .role-card {
+    grid-template-columns: 116px minmax(0, 1fr);
+    min-height: 350px;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .experience-grid {
     grid-template-columns: 1fr;
   }
   .role-card {
-    grid-template-columns: 150px minmax(0, 1fr);
+    grid-template-columns: 140px minmax(0, 1fr);
+    min-height: 300px;
   }
 }
 
@@ -116,16 +124,18 @@
     grid-template-columns: 1fr;
   }
   .role-card {
+    grid-template-areas:
+      "date"
+      "logo"
+      "title"
+      "company"
+      "body"
+      "tags"
+      "button";
     grid-template-columns: 1fr;
     text-align: left;
   }
-  .role-card > :not(.role-date):not(.role-logo-wrap),
-  .role-date,
   .role-logo-wrap {
-    grid-column: 1;
-  }
-  .role-logo-wrap {
-    grid-row: auto;
     max-width: 170px;
   }
   .article-container {
