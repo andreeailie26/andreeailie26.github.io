@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    if (!prevBtn || !nextBtn) return;
+
     function updateCarousel() {
       track.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
