@@ -50,7 +50,7 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .role-card {
-    grid-template-columns: 116px minmax(0, 1fr);
+    grid-template-columns: 84px minmax(0, 1fr);
     min-height: 350px;
   }
 }
@@ -60,7 +60,7 @@
     grid-template-columns: 1fr;
   }
   .role-card {
-    grid-template-columns: 140px minmax(0, 1fr);
+    grid-template-columns: 90px minmax(0, 1fr);
     min-height: 300px;
   }
 }
@@ -136,7 +136,7 @@
     text-align: left;
   }
   .role-logo-wrap {
-    max-width: 170px;
+    max-width: 92px;
   }
   .article-container {
     grid-template-columns: 1fr;
