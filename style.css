@@ -347,17 +347,14 @@ section {
 }
 
 .article-container {
-  display: flex;
+  display: grid;
   text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
-  justify-content: space-around;
 }
 
 article {
   display: flex;
-  width: 12rem;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 0.5rem;
@@ -388,10 +385,6 @@ article .icon {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.experience-grid .role-card:first-child {
-  grid-column: span 2;
-}
-
 .role-card {
   display: flex;
   width: auto;
@@ -417,14 +410,29 @@ article .icon {
   line-height: 1.55;
 }
 
-.role-photo {
-  width: 100%;
-  height: 220px;
+.role-logo-wrap {
+  align-items: center;
+  background: rgb(250, 250, 250);
+  border: rgb(220, 220, 220) 0.1rem solid;
   border-radius: 1.25rem;
-  object-fit: cover;
-  object-position: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 0.25rem;
-  background: rgb(245, 245, 245);
+  min-height: 140px;
+  padding: 1.25rem;
+}
+
+.role-logo {
+  max-height: 92px;
+  max-width: 190px;
+  object-fit: contain;
+}
+
+.role-logo-text {
+  color: rgb(53, 53, 53);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
 }
 
 .role-date {
@@ -555,7 +563,7 @@ footer p {
   display: block;
   object-fit: cover;
   object-position: center;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 5 / 4;
   max-height: 600px;
 }
 

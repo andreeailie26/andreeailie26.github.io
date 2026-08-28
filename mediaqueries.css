@@ -49,9 +49,6 @@
   .experience-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .experience-grid .role-card:first-child {
-    grid-column: span 2;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -112,14 +109,14 @@
   .experience-grid {
     grid-template-columns: 1fr;
   }
-  .experience-grid .role-card:first-child {
-    grid-column: span 1;
-  }
   .role-card {
     text-align: left;
   }
-  .role-photo {
-    height: 190px;
+  .role-logo-wrap {
+    min-height: 120px;
+  }
+  .article-container {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 600px) {
